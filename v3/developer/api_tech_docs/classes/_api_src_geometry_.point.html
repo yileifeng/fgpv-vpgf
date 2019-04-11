@@ -78,15 +78,15 @@
 						<dt>example</dt>
 						<dd><p>Create points using different icons and add to map</p>
 							<pre><code class="language-js"><span class="hljs-comment">// image / data URL as icon</span>
-<span class="hljs-keyword">var</span> pointA = <span class="hljs-keyword">new</span> RZ.GEO.Point(<span class="hljs-number">0</span>, [<span class="hljs-number">-79</span>, <span class="hljs-number">43</span>], {<span class="hljs-attr">icon</span>: <span class="hljs-string">'https://image.flaticon.com/icons/svg/17/17799.svg'</span>});
+<span class="hljs-keyword">var</span> pointA = <span class="hljs-keyword">new</span> RAMP.GEO.Point(<span class="hljs-number">0</span>, [<span class="hljs-number">-79</span>, <span class="hljs-number">43</span>], {<span class="hljs-attr">icon</span>: <span class="hljs-string">'https://image.flaticon.com/icons/svg/17/17799.svg'</span>});
 
 <span class="hljs-comment">// svg path as icon</span>
-<span class="hljs-keyword">var</span> pointB = <span class="hljs-keyword">new</span> RZ.GEO.Point(<span class="hljs-number">1</span>, [<span class="hljs-number">79</span>, <span class="hljs-number">32</span>], {<span class="hljs-attr">icon</span>: <span class="hljs-string">'M24.0,2.199C11.9595,2.199,2.199,11.9595,2.199,24.0c0.0,12.0405,9.7605,21.801,21.801'</span>});
+<span class="hljs-keyword">var</span> pointB = <span class="hljs-keyword">new</span> RAMP.GEO.Point(<span class="hljs-number">1</span>, [<span class="hljs-number">79</span>, <span class="hljs-number">32</span>], {<span class="hljs-attr">icon</span>: <span class="hljs-string">'M24.0,2.199C11.9595,2.199,2.199,11.9595,2.199,24.0c0.0,12.0405,9.7605,21.801,21.801'</span>});
 
 <span class="hljs-comment">// default icon</span>
-<span class="hljs-keyword">var</span> pointC = <span class="hljs-keyword">new</span> RZ.GEO.Point(<span class="hljs-number">2</span>, [<span class="hljs-number">79</span>, <span class="hljs-number">43</span>]);
+<span class="hljs-keyword">var</span> pointC = <span class="hljs-keyword">new</span> RAMP.GEO.Point(<span class="hljs-number">2</span>, [<span class="hljs-number">79</span>, <span class="hljs-number">43</span>]);
 
-RZ.mapById(<span class="hljs-string">'&lt;mapID&gt;'</span>).simpleLayer.addGeometry([pointA, pointB, pointC]);</code></pre>
+RAMP.mapById(<span class="hljs-string">'&lt;mapID&gt;'</span>).simpleLayer.addGeometry([pointA, pointB, pointC]);</code></pre>
 						</dd>
 					</dl>
 				</div>
@@ -147,7 +147,7 @@ RZ.mapById(<span class="hljs-string">'&lt;mapID&gt;'</span>).simpleLayer.addGeom
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_api_src_geometry_.basegeometry.html">BaseGeometry</a>.<a href="_api_src_geometry_.basegeometry.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/7caa56b/api/src/geometry.ts#L367">api/src/geometry.ts:367</a></li>
+									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/3fb0883/api/src/geometry.ts#L367">api/src/geometry.ts:367</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -199,7 +199,7 @@ RZ.mapById(<span class="hljs-string">'&lt;mapID&gt;'</span>).simpleLayer.addGeom
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_api_src_geometry_.basegeometry.html">BaseGeometry</a>.<a href="_api_src_geometry_.basegeometry.html#hover">hover</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/7caa56b/api/src/geometry.ts#L325">api/src/geometry.ts:325</a></li>
+									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/3fb0883/api/src/geometry.ts#L325">api/src/geometry.ts:325</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -216,7 +216,7 @@ RZ.mapById(<span class="hljs-string">'&lt;mapID&gt;'</span>).simpleLayer.addGeom
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_api_src_geometry_.basegeometry.html">BaseGeometry</a>.<a href="_api_src_geometry_.basegeometry.html#hover">hover</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/7caa56b/api/src/geometry.ts#L328">api/src/geometry.ts:328</a></li>
+									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/3fb0883/api/src/geometry.ts#L328">api/src/geometry.ts:328</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -245,7 +245,7 @@ RZ.mapById(<span class="hljs-string">'&lt;mapID&gt;'</span>).simpleLayer.addGeom
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_api_src_geometry_.basegeometry.html">BaseGeometry</a>.<a href="_api_src_geometry_.basegeometry.html#id">id</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/7caa56b/api/src/geometry.ts#L322">api/src/geometry.ts:322</a></li>
+									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/3fb0883/api/src/geometry.ts#L322">api/src/geometry.ts:322</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -267,7 +267,7 @@ RZ.mapById(<span class="hljs-string">'&lt;mapID&gt;'</span>).simpleLayer.addGeom
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/7caa56b/api/src/geometry.ts#L401">api/src/geometry.ts:401</a></li>
+									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/3fb0883/api/src/geometry.ts#L401">api/src/geometry.ts:401</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -290,7 +290,7 @@ RZ.mapById(<span class="hljs-string">'&lt;mapID&gt;'</span>).simpleLayer.addGeom
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_api_src_geometry_.basegeometry.html">BaseGeometry</a>.<a href="_api_src_geometry_.basegeometry.html#type">type</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/7caa56b/api/src/geometry.ts#L405">api/src/geometry.ts:405</a></li>
+									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/3fb0883/api/src/geometry.ts#L405">api/src/geometry.ts:405</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -312,7 +312,7 @@ RZ.mapById(<span class="hljs-string">'&lt;mapID&gt;'</span>).simpleLayer.addGeom
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/7caa56b/api/src/geometry.ts#L396">api/src/geometry.ts:396</a></li>
+									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/3fb0883/api/src/geometry.ts#L396">api/src/geometry.ts:396</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -338,7 +338,7 @@ RZ.mapById(<span class="hljs-string">'&lt;mapID&gt;'</span>).simpleLayer.addGeom
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_api_src_geometry_.basegeometry.html">BaseGeometry</a>.<a href="_api_src_geometry_.basegeometry.html#removehover">removeHover</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/7caa56b/api/src/geometry.ts#L337">api/src/geometry.ts:337</a></li>
+									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/3fb0883/api/src/geometry.ts#L337">api/src/geometry.ts:337</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -360,7 +360,7 @@ RZ.mapById(<span class="hljs-string">'&lt;mapID&gt;'</span>).simpleLayer.addGeom
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/7caa56b/api/src/geometry.ts#L412">api/src/geometry.ts:412</a></li>
+									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/3fb0883/api/src/geometry.ts#L412">api/src/geometry.ts:412</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">

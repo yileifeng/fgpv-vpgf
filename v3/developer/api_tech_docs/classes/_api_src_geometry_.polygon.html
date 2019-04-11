@@ -77,15 +77,15 @@
 					<dl class="tsd-comment-tags">
 						<dt>example</dt>
 						<dd><p>Create polygons using different styles and add to map</p>
-							<pre><code class="language-js"><span class="hljs-keyword">var</span> pointA = <span class="hljs-keyword">new</span> RZ.GEO.Point(<span class="hljs-number">0</span>, [<span class="hljs-number">-79</span>, <span class="hljs-number">43</span>]);
-<span class="hljs-keyword">var</span> pointB = <span class="hljs-keyword">new</span> RZ.GEO.Point(<span class="hljs-number">1</span>, [<span class="hljs-number">-49</span>, <span class="hljs-number">70</span>]);
+							<pre><code class="language-js"><span class="hljs-keyword">var</span> pointA = <span class="hljs-keyword">new</span> RAMP.GEO.Point(<span class="hljs-number">0</span>, [<span class="hljs-number">-79</span>, <span class="hljs-number">43</span>]);
+<span class="hljs-keyword">var</span> pointB = <span class="hljs-keyword">new</span> RAMP.GEO.Point(<span class="hljs-number">1</span>, [<span class="hljs-number">-49</span>, <span class="hljs-number">70</span>]);
 
 <span class="hljs-comment">// default settings - only the outline ring, no fill for polygon</span>
-<span class="hljs-keyword">var</span> polygonA = <span class="hljs-keyword">new</span> RZ.GEO.Polygon(<span class="hljs-number">10000</span>, [[pointA, [<span class="hljs-number">-79</span>, <span class="hljs-number">70</span>], pointB, [<span class="hljs-number">-49</span>, <span class="hljs-number">43</span>]], [[<span class="hljs-number">-70</span>, <span class="hljs-number">45</span>], [<span class="hljs-number">-70</span>, <span class="hljs-number">57</span>], [<span class="hljs-number">-55</span>, <span class="hljs-number">57</span>], [<span class="hljs-number">-55</span>, <span class="hljs-number">45</span>]]]);
+<span class="hljs-keyword">var</span> polygonA = <span class="hljs-keyword">new</span> RAMP.GEO.Polygon(<span class="hljs-number">10000</span>, [[pointA, [<span class="hljs-number">-79</span>, <span class="hljs-number">70</span>], pointB, [<span class="hljs-number">-49</span>, <span class="hljs-number">43</span>]], [[<span class="hljs-number">-70</span>, <span class="hljs-number">45</span>], [<span class="hljs-number">-70</span>, <span class="hljs-number">57</span>], [<span class="hljs-number">-55</span>, <span class="hljs-number">57</span>], [<span class="hljs-number">-55</span>, <span class="hljs-number">45</span>]]]);
 <span class="hljs-comment">// custom settings - just the fill for the polygon, no outline ring</span>
-<span class="hljs-keyword">var</span> polygonB = <span class="hljs-keyword">new</span> RZ.GEO.Polygon(<span class="hljs-number">10001</span>, [[<span class="hljs-number">-10</span>, <span class="hljs-number">45</span>], [<span class="hljs-number">-10</span>, <span class="hljs-number">57</span>], [<span class="hljs-number">-20</span>, <span class="hljs-number">57</span>], [<span class="hljs-number">-20</span>, <span class="hljs-number">45</span>]], { <span class="hljs-attr">outlineWidth</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">fillColor</span>: <span class="hljs-string">'#000000'</span>, <span class="hljs-attr">fillOpacity</span>: <span class="hljs-number">1</span> });
+<span class="hljs-keyword">var</span> polygonB = <span class="hljs-keyword">new</span> RAMP.GEO.Polygon(<span class="hljs-number">10001</span>, [[<span class="hljs-number">-10</span>, <span class="hljs-number">45</span>], [<span class="hljs-number">-10</span>, <span class="hljs-number">57</span>], [<span class="hljs-number">-20</span>, <span class="hljs-number">57</span>], [<span class="hljs-number">-20</span>, <span class="hljs-number">45</span>]], { <span class="hljs-attr">outlineWidth</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">fillColor</span>: <span class="hljs-string">'#000000'</span>, <span class="hljs-attr">fillOpacity</span>: <span class="hljs-number">1</span> });
 
-RZ.mapById(<span class="hljs-string">'&lt;mapID&gt;'</span>).simpleLayer.addGeometry([polygonA, polygonB]);</code></pre>
+RAMP.mapById(<span class="hljs-string">'&lt;mapID&gt;'</span>).simpleLayer.addGeometry([polygonA, polygonB]);</code></pre>
 						</dd>
 					</dl>
 				</div>
@@ -148,7 +148,7 @@ RZ.mapById(<span class="hljs-string">'&lt;mapID&gt;'</span>).simpleLayer.addGeom
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_api_src_geometry_.basegeometry.html">BaseGeometry</a>.<a href="_api_src_geometry_.basegeometry.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/7caa56b/api/src/geometry.ts#L712">api/src/geometry.ts:712</a></li>
+									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/3fb0883/api/src/geometry.ts#L712">api/src/geometry.ts:712</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -202,7 +202,7 @@ RZ.mapById(<span class="hljs-string">'&lt;mapID&gt;'</span>).simpleLayer.addGeom
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/7caa56b/api/src/geometry.ts#L656">api/src/geometry.ts:656</a></li>
+									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/3fb0883/api/src/geometry.ts#L656">api/src/geometry.ts:656</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -234,7 +234,7 @@ polygonA.addLinearRings([linearRingA]);  <span class="hljs-comment">// add linea
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_api_src_geometry_.basegeometry.html">BaseGeometry</a>.<a href="_api_src_geometry_.basegeometry.html#hover">hover</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/7caa56b/api/src/geometry.ts#L325">api/src/geometry.ts:325</a></li>
+									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/3fb0883/api/src/geometry.ts#L325">api/src/geometry.ts:325</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -251,7 +251,7 @@ polygonA.addLinearRings([linearRingA]);  <span class="hljs-comment">// add linea
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_api_src_geometry_.basegeometry.html">BaseGeometry</a>.<a href="_api_src_geometry_.basegeometry.html#hover">hover</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/7caa56b/api/src/geometry.ts#L328">api/src/geometry.ts:328</a></li>
+									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/3fb0883/api/src/geometry.ts#L328">api/src/geometry.ts:328</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -280,7 +280,7 @@ polygonA.addLinearRings([linearRingA]);  <span class="hljs-comment">// add linea
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_api_src_geometry_.basegeometry.html">BaseGeometry</a>.<a href="_api_src_geometry_.basegeometry.html#id">id</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/7caa56b/api/src/geometry.ts#L322">api/src/geometry.ts:322</a></li>
+									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/3fb0883/api/src/geometry.ts#L322">api/src/geometry.ts:322</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -302,7 +302,7 @@ polygonA.addLinearRings([linearRingA]);  <span class="hljs-comment">// add linea
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/7caa56b/api/src/geometry.ts#L753">api/src/geometry.ts:753</a></li>
+									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/3fb0883/api/src/geometry.ts#L753">api/src/geometry.ts:753</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -324,7 +324,7 @@ polygonA.addLinearRings([linearRingA]);  <span class="hljs-comment">// add linea
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/7caa56b/api/src/geometry.ts#L758">api/src/geometry.ts:758</a></li>
+									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/3fb0883/api/src/geometry.ts#L758">api/src/geometry.ts:758</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -347,7 +347,7 @@ polygonA.addLinearRings([linearRingA]);  <span class="hljs-comment">// add linea
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_api_src_geometry_.basegeometry.html">BaseGeometry</a>.<a href="_api_src_geometry_.basegeometry.html#type">type</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/7caa56b/api/src/geometry.ts#L763">api/src/geometry.ts:763</a></li>
+									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/3fb0883/api/src/geometry.ts#L763">api/src/geometry.ts:763</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -372,7 +372,7 @@ polygonA.addLinearRings([linearRingA]);  <span class="hljs-comment">// add linea
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/7caa56b/api/src/geometry.ts#L748">api/src/geometry.ts:748</a></li>
+									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/3fb0883/api/src/geometry.ts#L748">api/src/geometry.ts:748</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -396,7 +396,7 @@ polygonA.addLinearRings([linearRingA]);  <span class="hljs-comment">// add linea
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_api_src_geometry_.basegeometry.html">BaseGeometry</a>.<a href="_api_src_geometry_.basegeometry.html#removehover">removeHover</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/7caa56b/api/src/geometry.ts#L337">api/src/geometry.ts:337</a></li>
+									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/3fb0883/api/src/geometry.ts#L337">api/src/geometry.ts:337</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -418,7 +418,7 @@ polygonA.addLinearRings([linearRingA]);  <span class="hljs-comment">// add linea
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/7caa56b/api/src/geometry.ts#L770">api/src/geometry.ts:770</a></li>
+									<li>Defined in <a href="https://github.com/fgpv-vpgf/fgpv-vpgf/blob/3fb0883/api/src/geometry.ts#L770">api/src/geometry.ts:770</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
