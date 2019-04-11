@@ -64,19 +64,26 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<h3 id="v3-documentation-is-in-progress-"><a href="https://ramp-docs.fgpv-vpgf.com/v3-doc-1024/#/">V3 Documentation</a> is in progress!</h3>
+				<h3 id="v3-documentation-is-in-progress-"><a href="https://docs.fgpv.org/fgpv-vpgf/fgpv-vpgf/v3/#/">V3 Documentation</a> is in progress!</h3>
 				<p><a href="https://gitter.im/fgpv-vpgf/fgpv-vpgf?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://img.shields.io/badge/GITTER-join%20chat-green.svg?style=flat-square" alt="Join the chat at https://gitter.im/fgpv-vpgf/fgpv-vpgf"></a></p>
-				<p><a href="https://codeclimate.com/github/fgpv-vpgf/fgpv-vpgf"><img src="https://codeclimate.com/github/fgpv-vpgf/fgpv-vpgf/badges/gpa.svg" alt="Code Climate"></a>
-				<a href="https://codeclimate.com/github/fgpv-vpgf/fgpv-vpgf"><img src="https://codeclimate.com/github/fgpv-vpgf/fgpv-vpgf/badges/issue_count.svg" alt="Issue Count"></a></p>
+				<p><a href="https://codeclimate.com/github/fgpv-vpgf/fgpv-vpgf"><img src="https://codeclimate.com/github/fgpv-vpgf/fgpv-vpgf/badges/issue_count.svg" alt="Issue Count"></a></p>
 				<p><a href="https://david-dm.org/fgpv-vpgf/fgpv-vpgf"><img src="https://david-dm.org/fgpv-vpgf/fgpv-vpgf.svg?style=flat-square" alt="Dependency Status"></a>
 				<a href="https://david-dm.org/fgpv-vpgf/fgpv-vpgf#info=devDependencies"><img src="https://david-dm.org/fgpv-vpgf/fgpv-vpgf/dev-status.svg?style=flat-square" alt="devDependency Status"></a></p>
-				<h1 id="federal-geospatial-platform-visualiser-visualisateur-pour-la-plateforme-g-ospatiale-f-d-rale">Federal Geospatial Platform Visualiser / Visualisateur pour la Plateforme géospatiale fédérale</h1>
-				<h2 id="description">Description</h2>
-				<p>The Reusable Accessible Mapping Platform, RAMP ( aka the Federal Geospatial Platform Visualiser, FGPV) is a web mapping application. It is designed to be usable in any webpage and maintains WCAG 2.0 AA accessibility.</p>
+				<h1 id="ramp2">RAMP2</h1>
+				<p>The Reusable Accessible Mapping Platform (RAMP), also known as the Federal Geospatial Platform Visualiser (FGPV), is a Javascript based web mapping platform that provides a reusable, WCAG 2.0 AA compliant common viewer platform for the Government of Canada.</p>
+				<p>For more information on this project, please see one of the sections below:</p>
 				<ul>
-					<li><a href="https://fgpv-vpgf.github.io/schema-to-docs/">Highly configurable</a></li>
-					<li>User added layers, both services and files</li>
-					<li>Exportable and sharable maps</li>
+					<li><a href="#usage">Usage</a></li>
+					<li><a href="#building-the-project">Building the Project</a></li>
+					<li><a href="#support">Support</a></li>
+				</ul>
+				<p>Also, please visit the <a href="http://fgpv-vpgf.github.io/fgpv-vpgf/ghpages-docs/#/home">Documentation Site</a> for additional content on:</p>
+				<ul>
+					<li><a href="http://fgpv-vpgf.github.io/fgpv-vpgf/ghpages-docs/#/mapauthor/intro">Map Author Guide</a></li>
+					<li><a href="http://fgpv-vpgf.github.io/fgpv-vpgf/ghpages-docs/#/contribute/getting_started">Contributing to the RAMP Project</a></li>
+					<li><a href="https://fgpv-vpgf.github.io/schema-to-docs/">Interactive Schema Documentation</a></li>
+					<li><a href="http://fgpv-vpgf.github.io/fgpv-vpgf/ghpages-docs/#/developer/intro">Developer Guide</a></li>
+					<li><a href="http://fgpv-vpgf.github.io/fgpv-vpgf/ghpages-docs/#/technical/architecture">Technical Documentation</a></li>
 				</ul>
 				<h2 id="usage">Usage</h2>
 				<h3 id="quick-guide">Quick guide</h3>
@@ -96,16 +103,6 @@
 				<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">is</span>=<span class="hljs-string">"rv-map"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"height: 100%; display:flex;"</span> <span class="hljs-attr">rv-langs</span>=<span class="hljs-string">'["en-CA", "fr-CA"]'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
 				<p>A map should now load on your page. Theres much more you can do with RAMP, a good place to start (I&#39;m mentioning it again!) is the <a href="#map-author-guide">map author guide</a></p>
 				<h3 id="some-samples"><a href="http://fgpv.cloudapp.net/demo/develop/dev/samples/index-samples.html">Some samples</a></h3>
-				<h2 id="documentation"><a href="https://ramp-docs.fgpv-vpgf.com/v3.0.0/#/">Documentation</a></h2>
-				<h3 id="developer-guide"><a href="https://ramp-docs.fgpv-vpgf.com/v3.0.0/#/developer/intro">Developer Guide</a></h3>
-				<p>This guide goes over things such as the API, working with plugins, datatables, the technical documentation and covers the deprecated legacy API.</p>
-				<p>It is intended for developers looking to use the API to customize RAMP and how it interacts with the host page.</p>
-				<h3 id="map-author-guide"><a href="https://ramp-docs.fgpv-vpgf.com/v3.0.0/#/mapauthor/intro">Map Author Guide</a></h3>
-				<p>This guide goes over everything needed to get RAMP running on a page. It also goes through the process of writing a config file, and some extra info about using RAMP in your project.</p>
-				<p>It is intended for anyone looking to add RAMP to their webpage or project.</p>
-				<h3 id="contributing-to-ramp"><a href="https://ramp-docs.fgpv-vpgf.com/v3.0.0/#/contribute/getting_started">Contributing to RAMP</a></h3>
-				<p>This guide goes over the project environment, and outlines our processes for contributing code.</p>
-				<p>It is intended for JavaScript developers who want to contribute to the code base.</p>
 				<h2 id="building-the-project">Building the project</h2>
 				<p>Requirements:</p>
 				<ul>
@@ -118,8 +115,7 @@
 					<li>Run <code>npm install</code> to install dependencies</li>
 					<li>Run <code>npm run serve</code> to build and launch a dev server</li>
 				</ol>
-				<p>We use a fork and pull model for contributions, see our <a href="https://ramp-docs.fgpv-vpgf.com/v3.0.0/#/contribute/getting_started">contributing guidelines</a> for more details.</p>
-				<h3 id="interactive-schema-documentation"><a href="https://fgpv-vpgf.github.io/schema-to-docs/">Interactive Schema Documentation</a></h3>
+				<p>We use a fork and pull model for contributions, see our <a href="http://fgpv-vpgf.github.io/fgpv-vpgf/ghpages-docs/#/contribute/getting_started">contributing guidelines</a> for more details.</p>
 				<h3 id="generating-local-builds">Generating Local Builds</h3>
 				<ul>
 					<li><p><code>npm run build</code></p>
@@ -167,7 +163,7 @@
 				<p>GeoAPI: <a href="https://github.com/fgpv-vpgf/geoApi">https://github.com/fgpv-vpgf/geoApi</a></p>
 				<p>Plugins: <a href="https://github.com/fgpv-vpgf/plugins">https://github.com/fgpv-vpgf/plugins</a></p>
 				<p>GeoSearch: <a href="https://github.com/ramp-pcar/geosearch">https://github.com/ramp-pcar/geosearch</a></p>
-				<p>If you need help contributing, make sure to give the <a href="https://ramp-docs.fgpv-vpgf.com/v3.0.0/#/contribute/getting_started">contribution docs</a> a read. If you still have questions let us know.</p>
+				<p>If you need help contributing, make sure to give the <a href="http://fgpv-vpgf.github.io/fgpv-vpgf/ghpages-docs/#/contribute/getting_started">contribution docs</a> a read. If you still have questions let us know.</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
