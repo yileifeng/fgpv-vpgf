@@ -59,10 +59,10 @@
 Place the files <code>rv-main.js</code> and <code>rv-styles.css</code> within your webpage's folder structure. We usually put our JavaScript files under a <code>js</code> folder and our stylesheets under a <code>css</code> folder.</p>
 <p>Then you want to include those files on your page, along with jQuery and the needed polyfills (again, more info at the <a href="#map-author-guide">map author guide</a>):</p>
 <ol>
-<li>Within <code>head</code><pre class="prettyprint source lang-html"><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;../../../rv-styles.css&quot; /></code></pre></li>
+<li>Within <code>head</code><pre class="prettyprint source lang-html"><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;../../../plugins/0f6f76011a975c128fdec5cf4d3b974ae6941552/rv-styles.css&quot; /></code></pre></li>
 <li>Near the end of the <code>body</code><pre class="prettyprint source lang-html"><code>&lt;script src=&quot;https://code.jquery.com/jquery-2.2.4.min.js&quot; integrity=&quot;sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=&quot; crossorigin=&quot;anonymous&quot;>&lt;/script>
 &lt;script src=&quot;https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Object.entries,Object.values,Array.prototype.find,Array.prototype.findIndex,Array.prototype.values,Array.prototype.includes,HTMLCanvasElement.prototype.toBlob,String.prototype.repeat,String.prototype.codePointAt,String.fromCodePoint,NodeList.prototype.@@iterator,Promise,Promise.prototype.finally&quot;>&lt;/script>
-&lt;script src=&quot;/js/rv-main.js&quot;>&lt;/script></code></pre></li>
+&lt;script src=&quot;/js/plugins/0f6f76011a975c128fdec5cf4d3b974ae6941552/rv-main.js&quot;>&lt;/script></code></pre></li>
 </ol>
 <p>Now that you have the required files on your page we should add the map element.</p>
 <pre class="prettyprint source lang-html"><code>&lt;div is=&quot;rv-map&quot; style=&quot;height: 100%; display:flex;&quot; rv-langs='[&quot;en-CA&quot;, &quot;fr-CA&quot;]'>&lt;/div></code></pre><p>A map should now load on your page. Theres much more you can do with RAMP, a good place to start (I'm mentioning it again!) is the <a href="#map-author-guide">map author guide</a></p>
